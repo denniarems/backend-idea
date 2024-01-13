@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "oven.bun-vscode",
+        "github.copilot",
+        "github.copilot-chat",
+        "nuxtr.nuxtr-vscode",
+        "bradlc.vscode-tailwindcss",
+        "vue.volar",
+        "beardedbear.beardedtheme",
+        "beardedbear.beardedicons"
+    ]
+}
