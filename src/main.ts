@@ -5,25 +5,25 @@ import { autoroutes } from 'elysia-autoroutes'
 import { compression } from 'elysia-compression'
 import { helmet } from 'elysia-helmet'
 import { httpError } from 'elysia-http-error'
-import { ip } from 'elysia-ip'
-import { env } from 'env'
+// import { ip } from 'elysia-ip'
+import { env } from './env'
 // import { rateLimit } from 'elysia-rate-limit'
 
 const app = new Elysia()
-	.use(helmet())
-	.use(logger({ logIP: true }))
-	// .use(rateLimit({}))
-	.use(httpError())
-	.use(compression())
-	.use(ip())
 	.use(
 		swagger({
 			autoDarkMode: true
 		})
 	)
+	// .use(helmet())
+	// .use(logger({ logIP: true }))
+	// .use(httpError())
+	// .use(compression())
+	// .use(rateLimit({}))
+	// .use(ip())
 	.use(
 		autoroutes({
-			routesDir: './src/routes' // -> optional, defaults to './routes'
+			routesDir: './routes' // -> optional, defaults to './routes'
 		})
 	)
 	.listen(env.PORT)

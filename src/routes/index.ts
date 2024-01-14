@@ -1,5 +1,6 @@
 // routes/index.ts
 
-import { ElysiaApp } from 'main'
+import { hello } from '~/handlers/hello'
+import { ElysiaApp } from '~/main'
 
-export default (app: ElysiaApp) => app.get('', { hello: 'world' })
+export default (app: ElysiaApp) => app.get('', () => hello())
