@@ -1,3 +1,14 @@
 {
-    "editor.fontSize": 16
+    "editor.fontSize": 16,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports.biome": true,
+        "quickfix.biome": true
+    },
+    "editor.defaultFormatter": "biomejs.biome-nightly",
+    "[javascript]": {
+        "editor.defaultFormatter": "biomejs.biome-nightly"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome-nightly"
+    }
 }
