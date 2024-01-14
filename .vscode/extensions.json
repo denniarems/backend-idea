@@ -6,6 +6,7 @@
 		"nuxtr.nuxtr-vscode",
 		"bradlc.vscode-tailwindcss",
 		"vue.volar",
+		"ms-azuretools.vscode-docker",
 		"beardedbear.beardedtheme",
 		"beardedbear.beardedicons",
 		"biomejs.biome-nightly"
